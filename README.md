@@ -25,3 +25,8 @@ strcenter(s, w; dots=true)
 
 Centers a string `s` by surrounding it with enough spaces left and right such that it becomes `w` characters wide.
 Cuts `s` using `strcut` if it is too long.
+
+DICOM Data
+==========
+
+If the [`DICOM.jl`]() package is installed, this implements `Base.show(::IO, ::DcmElt)` which shows the tag name instead of number.
